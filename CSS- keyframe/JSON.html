@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<script>
+	
+	
+	var data= {
+		
+		
+		"color":["red","blue","green"],
+		"records":[							
+		
+			{"pc":"hp","company":"asus" },
+			{"pc":"gigabyte","company":"sapphire"},
+			{"pc":"radeon"	,"company":"pulse"} 						
+		
+		
+		
+		]
+		
+		
+		
+	};
+	
+	for (key in data.records ) {
+		
+		for(inner_key in data.records[key]) {
+		
+		document.write(data.records[key][inner_key]+"<br>");
+		
+		
+	} }
+	</script>
+
+</body>
+</html>

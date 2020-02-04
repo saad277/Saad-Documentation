@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+<title>
+
+Api
+
+
+</title>
+
+
+
+</head>
+
+<body>
+
+
+
+<h1>      Weather api      </h1>
+
+<button onclick="get()">   Fetch      </button>
+
+</body>
+
+<script>
+
+async function get() {
+
+
+var data =await fetch("http://api.openweathermap.org/data/2.5/weather?q=London&unit=metrices&APPID=b8e0e5304a450baf930c01f790e4abc8" );
+
+
+var data2=await data.json();
+
+console.log(data2.name);
+console.log(data2.main.temp);
+
+
+
+}
+
+
+</script>
+
+
+
+</html>

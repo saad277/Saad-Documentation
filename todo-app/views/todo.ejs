@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>     To--do    </title>
+
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous">
+</script>
+
+<link href="styles.css"     rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+<div id="todo-table">
+<h1>	MY APP		</h1>
+<form>
+
+<input type="text" name="item" placeholder="Add New Item" required>
+
+<button type="submit">  Add item    </button>
+
+
+</form>
+
+<ul>
+
+<% for(var i=0; i<=data.length;i++) {    %>
+
+
+<li>    <%= data[i]  %>		   </li>
+
+
+<%  }  %> 
+
+</ul>
+
+
+</div>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>

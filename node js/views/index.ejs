@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<style>
+
+body{
+
+text-align: center;
+background-color: cornflowerblue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+</style>
+
+<html>
+
+
+<head>      <title>     </title>        </head>
+
+
+<body>
+
+<h1>       THIS IS SERVING A HTML PAGE IN NODE         </h1>
+
+<br>
+<br>
+
+<h1>      This is Example of Template Engine           </h1>
+
+<h1>       Profile : <%= person %>                         </h1>
+
+
+<h2>        Work : <%= json.work %>                            </h2>
+
+
+<h3>     Hobbies            </h3>
+    
+
+<ul>
+                <% json.hobbies.map(function(name,id) {     %>
+
+
+
+                
+          <li>       <%=  name %>              </li>  
+
+       <% });   %>
+
+</ul>
+
+</body>
+
+
+</html>
